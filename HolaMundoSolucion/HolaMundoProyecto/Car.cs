@@ -24,10 +24,14 @@ namespace HolaMundoProyecto
             TipoMotor = tipoMotor;
             this.matricula = matricula;
         }
+        public Car() { }
 
         public override string ToString()
         {
             return $"Car: Marca = {Marca}, Modelo = {Modelo}, Color = {Color}, TipoMotor = {TipoMotor}, Matricula = {matricula}";
         }
+
+       
+        
     }
 }

@@ -45,6 +45,34 @@ namespace HolaMundoProyecto
             {
                 Console.WriteLine(c.ToString());
             }
-        }
+
+            // 3 FORMAS DE INICIALIZAR UN OBJETO COCHE:
+            Console.WriteLine("-----------------------------------------------------------\n3 formas de inicializar un objeto \n");
+            // Crear empleado mediante constructor
+            Car car1 = new Car("Green", "Ford", "Mustang", "Gasoline", "12d1d23r");
+            Console.WriteLine(car1.ToString());
+
+            // Crear empleado mediante constructor por defecto
+            // y asignar valores a las propiedades
+            Car car2 = new Car();
+            car2.Color = "Green";
+            car2.TipoMotor = "Electrico";
+            car2.Marca = "VW";
+            car2.Modelo = "Polo";
+            // car2.matricula = "adfasdfsvd";
+            Console.WriteLine(car2.ToString());
+
+            // Crear empleado mediante inicializador de objetos
+            Car car3 = new Car()
+            {
+                Color = "Green",
+                TipoMotor = "Electrico",
+                Marca = "VW",
+                Modelo = "Polo",
+                // matricula = "adfasdfsvd"
+
+            };
+            Console.WriteLine(car3.ToString());
+    }
     }
 }
