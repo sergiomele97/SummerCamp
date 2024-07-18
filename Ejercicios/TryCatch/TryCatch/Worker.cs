@@ -46,5 +46,5 @@ namespace TryCatch
          Console.WriteLine("\n\nEl programa no ha petado todavia del todo");
          Console.ReadKey();
         }
-    }
+   }
 }
