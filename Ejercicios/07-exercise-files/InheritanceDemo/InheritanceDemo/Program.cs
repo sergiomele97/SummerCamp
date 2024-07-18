@@ -36,12 +36,13 @@ namespace InheritanceDemo
             Pepe
          };
 
-         for (int i = 0; i < employees.Count; i++)
-         {
+            foreach (Employee employee in employees)
+            {
+
+                Console.WriteLine(employee);
+                employee.getVacations();
             
-            Console.WriteLine(employees[i]);
-            employees[i].getVacations();
-         }
+            }
       }
    }
 }
